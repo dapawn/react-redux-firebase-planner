@@ -8,6 +8,7 @@ export const createProject = (project) => {
       ...project,
       authorFirstName: 'dapawn',
       authorLastName: 'Kuru',
+      authorId: 12345,
       createdAt: new Date()
     }).then( () => {
       dispatch({type: 'CREATE_PROJECT', project});

@@ -1,11 +1,11 @@
-
 import React from 'react';
 import {connect} from 'react-redux';
 import {compose} from 'redux';
 import {firestoreConnect} from 'react-redux-firebase';
+import { Redirect } from 'react-router-dom';
 
 const ProjectDetails = (props) => {
-  const { project} = props;
+  const { project, auth } = props;
   if (project) { 
     return (
       <div className="container section project-details">

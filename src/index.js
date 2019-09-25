@@ -9,8 +9,12 @@ import { Provider } from 'react-redux';
 import thunk from 'redux-thunk';
 import { reduxFirestore, getFirestore }  from 'redux-firestore';
 import { reactReduxFirebase, getFirebase }  from 'react-redux-firebase';
-import firebase from 'firebase/app';
+import { Redirect } from 'react-router-dom';
 import fbConfig from './config/fbConfig';
+import firebase from 'firebase/app'
+import 'firebase/auth'
+import 'firebase/database'
+import 'firebase/firestore'
 
 // react-redux-firebase options
 const rrfConfig = {

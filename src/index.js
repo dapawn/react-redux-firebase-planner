@@ -19,6 +19,7 @@ import 'firebase/firestore'
 // react-redux-firebase options
 const rrfConfig = {
   userProfile: 'users', // firebase root where user profiles are stored
+  useFirestoreForProfile: true, //load profile from matching uid in firestore
   attachAuthIsReady: true, // attaches auth is ready promise to store
   firebaseStateName: 'firebase' // should match the reducer name ('firebase' is default)
 }

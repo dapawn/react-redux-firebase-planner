@@ -17,7 +17,7 @@ class Dashboard extends Component {
             <ProjectList projects={projects}/>
           </div>
           <div className="col s12 m5 offset-m1">
-            <Notifications />
+            <Notifications notifications={notifications}/>
           </div>
         </div>
       </div>
@@ -37,5 +37,6 @@ export default compose(
   connect(mapStateToProps),
   firestoreConnect([
     { collection: 'projects', orderBy: ['createdAt', 'desc'] },
+    { collection: 'notifications', limit: 3, orderBy: ['time', 'desc'] }
   ])
 )(Dashboard);

@@ -1,7 +1,7 @@
 {
   "site": "dapawn-planner",
   "hosting": {
-    "public": "dist",
+    "public": "build",
     "ignore": [
       "firebase.json",
       "**/.*",
